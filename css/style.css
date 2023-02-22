@@ -87,12 +87,6 @@ main{
     background-color: var(--dark-grey);   
 }
 
-.main-nav{
-    width: 230px;
-    min-height: 480px;
-    background-color: var(--balck);
-}
-
 .main-content{
     width: calc(100% - 230px);
     height: 100%;
@@ -136,8 +130,8 @@ nav ul.flex-center li a.u-text{
     padding: 15px;
 }
 
-.container h2{
-    padding: 15px 0;
+h2.padding-bottom{
+    padding-bottom: 2rem;
 }
 
 .card{
@@ -153,7 +147,7 @@ nav ul.flex-center li a.u-text{
     text-align: center;
 }
 
-.card p{
+.text-grey{
     color: var(--grey);
     font-size: 0.8rem;
     font-weight: 600;
@@ -163,4 +157,19 @@ nav ul.flex-center li a.u-text{
     padding: 10px 0;
     font-size: 1rem;    
     font-weight: 600;
+}
+
+p.padding{
+    padding: 1.5rem 0;
+}
+
+.img-circle img{
+    border-radius: 50%;
+}
+
+/* Main nav */
+.main-nav{
+    width: 230px;
+    min-height: 480px;
+    background-color: var(--balck);
 }
