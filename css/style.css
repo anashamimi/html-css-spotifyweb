@@ -243,7 +243,12 @@ div.bottom-nav img{
 }
 
 .playlist ul{
-    padding-top: 15px;
+    padding-top: 15px;    
+}
+
+.playlist{
+    height: 300px;
+    overflow-y: scroll;    
 }
 
 .playlist li.text-gray{
@@ -338,8 +343,21 @@ p.padding{
 .playbar-vol {
     width: 230px;
     height: 100%;
+    padding: 15px;
+}
+
+.playbar-album div i.fa-heart{
+    padding: 0 15px;
+}
+
+.playbar-album .brano-name{
+    font-size: 15px;
 }
 
 .playbar-control{   
     
+}
+
+.playbar-album img{
+    width: 30px;
 }
