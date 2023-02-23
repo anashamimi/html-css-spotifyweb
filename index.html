@@ -21,39 +21,72 @@
         <main class="d-flex">
 
             <nav class="main-nav">
-                <img class="logo" src="./spotify/img/logo.svg" alt="Logo spotify">
-                <div class="text-gray d-flex align-center gap">
-                    <img src="./spotify/img/home.svg" alt="Home">
-                    <span>Home</span>
-                </div>
-
-                <div class="text-gray d-flex align-center gap">
-                    <img src="./spotify/img/search.svg" alt="Cerca">
-                    <span>Cerca</span>
-                </div>
-
-                <div class="text-gray d-flex align-center gap">
-                    <img src="./spotify/img/libreria.svg" alt="Libreria">
-                    <span>Cra la tua libreria</span>
-                </div>
-
-                <div>
-                    <h3>Playlist</h3>
-                    <div class="d-flex align-center gap">
-                        <div class="box-plus d-flex align-center flex-center">
-                            <i class="fa-sharp fa-solid fa-plus"></i>
-                        </div>
-                        <span class="text-gray">Crea Playlist</span>
+                <div class="top-nav">
+                    <div class="logo">
+                        <img src="./spotify/img/logo.svg" alt="Logo spotify">
                     </div>
 
-                    <div class="playlist">
-                        <p class="text-gray">Nome Playlist</p>
-                        <p class="text-gray">Nome Playlist</p>
-                        <p class="text-gray">Nome Playlist</p>
-                        <p class="text-gray">Nome Playlist</p>
-                        <p class="text-gray">Nome Playlist</p>
-                        <p class="text-gray">Nome Playlist</p>
-                        <p class="text-gray">Nome Playlist</p>
+                    <div class="logo-small">
+                        <img src="./spotify/img/logo-small.svg" alt="">
+                    </div>
+
+                    <section class="aside-nav">
+                        <div>
+                            <a href="#" class="text-gray d-flex align-center gap">
+                                <img src="./spotify/img/home.svg" alt="Home">
+                                <span>Home</span>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="#" class="text-gray d-flex align-center gap">
+                                <img src="./spotify/img/search.svg" alt="Search">
+                                <span>Cerca</span>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="#" class="text-gray d-flex align-center gap">
+                                <img src="./spotify/img/libreria.svg" alt="Libreria">
+                                <span>La tua libreria</span>
+                            </a>
+                        </div>
+                    </section>
+
+
+                    <div>
+                        <h3>Playlist</h3>
+                        <div class="d-flex align-center gap">
+                            <div class="box-plus d-flex align-center flex-center">
+                                <i class="fa-sharp fa-solid fa-plus"></i>
+                            </div>
+                            <span class="text-gray">Crea Playlist</span>
+                        </div>
+
+                        <div class="playlist">
+                            <ul>
+                                <li class="text-gray">Nome Playlist</li>
+                                <li class="text-gray">Nome Playlist</li>
+                                <li class="text-gray">Nome Playlist</li>
+                                <li class="text-gray">Nome Playlist</li>
+                                <li class="text-gray">Nome Playlist</li>
+                                <li class="text-gray">Nome Playlist</li>
+                                <li class="text-gray">Nome Playlist</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="bottom-nav">
+                    <div class="border-bottom  d-flex align-center gap">
+                        <img src="./spotify/img/download.svg" alt="Scarica">
+                        <span class="text-gray">Installa App</span>
+                    </div>
+
+                    <div class="user">
+                        <i class="fa-solid fa-circle-user"></i>
                     </div>
 
                 </div>
@@ -62,7 +95,7 @@
             </nav>
             <sectione class="main-content">
                 <div id="call-to-action" class="d-flex flex-end align-center">
-                    <a href="#" class="btn  u-text">Effettua l'upgrade</a>
+                    <a href="#" class="btn scale u-text">Effettua l'upgrade</a>
                 </div>
 
                 <div class="main-section">
@@ -81,42 +114,59 @@
                         <h2 class="padding-bottom">Recently Played</h2>
                         <div class="d-flex card-flex">
                             <div class="card">
-                                <img src="./spotify/img/metal_lifting.jpg" alt="heavy metal">
+                                <div class="cover-image">
+                                    <img src="./spotify/img/metal_lifting.jpg" alt="heavy metal">
+                                </div>
+
                                 <div>
                                     <h3>Heavy Metal</h3>
                                     <p class="text-gray">Subtitle</p>
                                 </div>
                             </div>
                             <div class="card">
-                                <img src="./spotify/img/stranger.jpeg" alt="playlist stranger things">
+                                <div class="cover-image">
+                                    <img src="./spotify/img/stranger.jpeg" alt="playlist stranger things">
+                                </div>
+
                                 <div>
                                     <h3>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
                                     <p class="text-gray">Kyle Dixon & Micheal Stein</p>
                                 </div>
                             </div>
                             <div class="card">
-                                <img src="./spotify/img/aquietplace.jpeg" alt="quite place">
+                                <div class="cover-image">
+                                    <img src="./spotify/img/aquietplace.jpeg" alt="quite place">
+                                </div>
                                 <div>
                                     <h3>A quiet place</h3>
                                     <p class="text-gray">Subtitle</p>
                                 </div>
                             </div>
                             <div class="card">
-                                <img src="./spotify/img/split.jpeg" alt="split">
+                                <div class="cover-image">
+                                    <img src="./spotify/img/split.jpeg" alt="split">
+
+                                </div>
                                 <div>
                                     <h3>Split</h3>
                                     <p class="text-gray">Subtitle</p>
                                 </div>
                             </div>
                             <div class="card">
-                                <img src="./spotify/img/cure.jpeg" alt="">
+                                <div class="cover-image">
+                                    <img src="./spotify/img/cure.jpeg" alt="">
+
+                                </div>
                                 <div>
                                     <h3>A cure for weliness</h3>
                                     <p class="text-gray">Subtitle</p>
                                 </div>
                             </div>
                             <div class="card">
-                                <img src="./spotify/img/sinister.jpeg" alt="sinister">
+                                <div class="cover-image">
+                                    <img src="./spotify/img/sinister.jpeg" alt="sinister">
+                                </div>
+
                                 <div>
                                     <h3>Sinister</h3>
                                     <p class="text-gray">Subtitle</p>
@@ -132,13 +182,19 @@
                         </p>
                         <div class="d-flex card-flex">
                             <div class="card">
-                                <img src="./spotify/img/radar.jpeg" alt="release radar">
+                                <div class="cover-image">
+                                    <img src="./spotify/img/radar.jpeg" alt="release radar">
+                                </div>
+
                                 <div>
                                     <h3>Release Radar</h3>
                                 </div>
                             </div>
                             <div class="card">
-                                <img src="./spotify/img/mixdaily.jpeg" alt="Mix">
+                                <div class="cover-image">
+                                    <img src="./spotify/img/mixdaily.jpeg" alt="Mix">
+                                </div>
+
                                 <div>
                                     <h3>Daily Mix 1</h3>
                                 </div>
@@ -151,7 +207,8 @@
                         </p>
                         <div class="d-flex card-flex">
                             <div class="card">
-                                <div class="img-circle">
+
+                                <div class="img-circle cover-image">
                                     <img src="./spotify/img/youg.jpeg" alt="youg">
                                 </div>
 
@@ -160,9 +217,11 @@
                                 </div>
                             </div>
                             <div class="card">
-                                <div class="img-circle">
+
+                                <div class="img-circle cover-image">
                                     <img src="./spotify/img/einaudi.jpeg" alt="einaudi">
                                 </div>
+
                                 <div>
                                     <h3>Einaudi</h3>
                                 </div>
@@ -173,8 +232,31 @@
 
             </sectione>
         </main>
-        <div id="playbar">
+        <div id="playbar" class="d-flex space-between align-center">
+            <div class="playbar-album">
 
+            </div>
+
+            <div class="playbar-control">
+
+            </div>
+
+            <div class="playbar-vol">
+
+            </div>
+
+            <!-- 
+                // CUORE E CARTELLA //
+<i class="fa-regular fa-heart"></i>
+                        <i class="fa-sharp fa-regular fa-folder"></i>
+
+// PLAYER //
+<i class="fa-solid fa-shuffle"></i>
+                        <i class="fa-solid fa-backward-step"></i>
+                        <i class="fa-sharp fa-regular fa-circle-play"></i>
+                        <i class="fa-solid fa-forward-step"></i>
+                        <i class="fa-solid fa-rotate-right"></i>
+             -->
         </div>
     </div>
 </body>
