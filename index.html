@@ -234,34 +234,35 @@
 
             </sectione>
         </main>
-        <div id="playbar d-flex space-between align-center">
-            <div class="playbar-album d-flex space-between align-center">
+        <div id="playbar" class="d-flex">
+            <div class="playbar-album d-flex align-center">
 
-                <div class="d-flex align-center">
+                <div class="d-flex align-center gap">
                     <img src="./spotify/img/sinister.jpeg" alt="Sinister mini">
                     <div>
-                        <span class="brano-name">Sinister</span>
-                        <span class="text-gray">Brano Nome</span>
+                        <p class="brano-name">Sinister</p>
+                        <p class="text-gray">Brano Nome</p>
                     </div>
 
-
-                </div>
-
-                <div>
                     <i class="fa-regular fa-heart"></i>
                     <i class="fa-sharp fa-regular fa-folder"></i>
+
                 </div>
-
-
-
             </div>
 
             <div class="playbar-control">
 
             </div>
 
-            <div class="playbar-vol">
+            <div class="playbar-vol d-flex align-center space-between gap">
 
+                <i class="fa-solid fa-list-ul"></i>
+                <i class="fa-solid fa-display"></i>
+                <i class="fa-solid fa-volume-high"></i>
+
+                <div>
+                    <input type="range" min="0" max="100" value="25" class="volume-bar">
+                </div>
             </div>
 
             <!-- 
