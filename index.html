@@ -34,37 +34,37 @@
                         <div>
                             <a href="#" class="text-gray d-flex align-center gap">
                                 <img src="./spotify/img/home.svg" alt="Home">
-                                <span>Home</span>
+                                <span class="display-none">Home</span>
                             </a>
                         </div>
 
                         <div>
                             <a href="#" class="text-gray d-flex align-center gap">
                                 <img src="./spotify/img/search.svg" alt="Search">
-                                <span>Cerca</span>
+                                <span class="display-none">Cerca</span>
                             </a>
                         </div>
 
                         <div>
                             <a href="#" class="text-gray d-flex align-center gap">
                                 <img src="./spotify/img/libreria.svg" alt="Libreria">
-                                <span>La tua libreria</span>
+                                <span class="display-none">La tua libreria</span>
                             </a>
                         </div>
                     </section>
 
 
-                    <div>
+                    <div class="display-none">
                         <h3>Playlist</h3>
                         <div class="d-flex align-center gap">
                             <div class="box-plus d-flex align-center flex-center">
                                 <i class="fa-sharp fa-solid fa-plus"></i>
                             </div>
-                            <span class="text-gray">Crea Playlist</span>
+                            <span class="text-gray display-none">Crea Playlist</span>
                         </div>
 
-                        <div class="playlist">
-                            <ul>
+                        <div>
+                            <ul class="playlist">
                                 <li class="text-gray">Nome Playlist</li>
                                 <li class="text-gray">Nome Playlist</li>
                                 <li class="text-gray">Nome Playlist</li>
@@ -82,11 +82,12 @@
                 <div class="bottom-nav">
                     <div class="border-bottom  d-flex align-center gap">
                         <img src="./spotify/img/download.svg" alt="Scarica">
-                        <span class="text-gray">Installa App</span>
+                        <span class="text-gray display-none underline">Installa App</span>
                     </div>
 
-                    <div class="user">
+                    <div class="user d-flex align-center gap">
                         <i class="fa-solid fa-circle-user"></i>
+                        <span class="display-none">Hamimi anas</span>
                     </div>
 
                 </div>
@@ -122,7 +123,7 @@
 
                                 <div>
                                     <h3>Heavy Metal</h3>
-                                    <p class="text-gray">Subtitle</p>
+                                    <p class="text-gray underline">Subtitle</p>
                                 </div>
                             </div>
                             <div class="card">
@@ -132,7 +133,7 @@
 
                                 <div>
                                     <h3>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
-                                    <p class="text-gray">Kyle Dixon & Micheal Stein</p>
+                                    <p class="text-gray underline">Kyle Dixon & Micheal Stein</p>
                                 </div>
                             </div>
                             <div class="card">
@@ -141,7 +142,7 @@
                                 </div>
                                 <div>
                                     <h3>A quiet place</h3>
-                                    <p class="text-gray">Subtitle</p>
+                                    <p class="text-gray underline">Subtitle</p>
                                 </div>
                             </div>
                             <div class="card">
@@ -151,7 +152,7 @@
                                 </div>
                                 <div>
                                     <h3>Split</h3>
-                                    <p class="text-gray">Subtitle</p>
+                                    <p class="text-gray underline">Subtitle</p>
                                 </div>
                             </div>
                             <div class="card">
@@ -161,7 +162,7 @@
                                 </div>
                                 <div>
                                     <h3>A cure for weliness</h3>
-                                    <p class="text-gray">Subtitle</p>
+                                    <p class="text-gray underline">Subtitle</p>
                                 </div>
                             </div>
                             <div class="card">
@@ -171,7 +172,7 @@
 
                                 <div>
                                     <h3>Sinister</h3>
-                                    <p class="text-gray">Subtitle</p>
+                                    <p class="text-gray underline">Subtitle</p>
                                 </div>
                             </div>
                         </div>
@@ -179,7 +180,7 @@
                     </section>
                     <section class="container">
                         <h2>Creato per John Doe</h2>
-                        <p class="text-gray padding">
+                        <p class="text-gray padding underline">
                             Più ascolti, più accurati saranno i suggerimenti.
                         </p>
                         <div class="d-flex card-flex">
@@ -204,7 +205,7 @@
                     </section>
                     <section class="container">
                         <h2>Artisti più popolari</h2>
-                        <p class="text-gray padding">
+                        <p class="text-gray padding underline">
                             Più ascolti, più accurati saranno i suggerimenti.
                         </p>
                         <div class="d-flex card-flex">
@@ -241,42 +242,49 @@
                     <img src="./spotify/img/sinister.jpeg" alt="Sinister mini">
                     <div>
                         <p class="brano-name">Sinister</p>
-                        <p class="text-gray">Brano Nome</p>
+                        <p class="text-gray underline">Brano Nome</p>
                     </div>
 
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-sharp fa-regular fa-folder"></i>
+                    <div class="playbar-album-column">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-sharp fa-regular fa-folder"></i>
+                    </div>
+
 
                 </div>
             </div>
 
-            <div class="playbar-control">
+            <div class="playbar-control d-flex flex-center align-center column">
+
+                <div>
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-sharp fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+
+                <div>
+                    <span class="time">1.29</span>
+                    <input type="range" min="0" max="100" value="25" class="music-bar">
+                    <span class="time">4.37</span>
+                </div>
 
             </div>
 
             <div class="playbar-vol d-flex align-center space-between gap">
 
-                <i class="fa-solid fa-list-ul"></i>
-                <i class="fa-solid fa-display"></i>
-                <i class="fa-solid fa-volume-high"></i>
-
-                <div>
+                <div class="d-flex align-center space-between gap">
+                    <i class="fa-solid fa-list-ul"></i>
+                    <i class="fa-solid fa-display"></i>
+                    <i class="fa-solid fa-volume-high"></i>
                     <input type="range" min="0" max="100" value="25" class="volume-bar">
                 </div>
+
+
+
             </div>
 
-            <!-- 
-                // CUORE E CARTELLA //
-<i class="fa-regular fa-heart"></i>
-                        <i class="fa-sharp fa-regular fa-folder"></i>
-
-// PLAYER //
-<i class="fa-solid fa-shuffle"></i>
-                        <i class="fa-solid fa-backward-step"></i>
-                        <i class="fa-sharp fa-regular fa-circle-play"></i>
-                        <i class="fa-solid fa-forward-step"></i>
-                        <i class="fa-solid fa-rotate-right"></i>
-             -->
         </div>
     </div>
 </body>
